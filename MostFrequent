@@ -1,0 +1,22 @@
+	//出现次数最多的树 (第一个为个数，后面为数据)
+	int n;
+	cin >> n;
+	map<int, int>fmap;
+
+	for (int i = 0;i < n; i++)
+	{
+		int tmp;
+		cin >> tmp;
+		fmap[tmp]++;
+	}
+
+	int ans, im = 0;
+	for (map<int, int>::iterator it = fmap.begin();it != fmap.end(); it++)
+	{
+		if (it->second > im)
+		{
+			im = it->second;
+			ans = it->first;
+		}
+	}
+	cout << ans << endl;
