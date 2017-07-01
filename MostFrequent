@@ -1,3 +1,10 @@
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main()
+{
 	//出现次数最多的树 (第一个为个数，后面为数据)
 	int n;
 	cin >> n;
@@ -20,3 +27,4 @@
 		}
 	}
 	cout << ans << endl;
+}
